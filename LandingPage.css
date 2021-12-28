@@ -1,0 +1,349 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: rgb(5, 0, 5);
+}
+
+/* ------------------------------------------------------------------- */
+
+#background {
+	position: fixed;
+	text-align: center;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	filter: brightness(1.5);
+	z-index: -1;
+}
+
+/* ------------------------------------------------------------------- */
+
+#nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 4em;
+	background: transparent;
+}
+
+.nav-left,
+.nav-logo-container {
+	display: flex;
+	align-items: center;
+	padding-left: 0.5em;
+	text-decoration: none;
+}
+
+.nav-logo img {
+	height: 3em;
+	border: 3px solid rgb(235, 47, 47);
+	border-radius: 25%;
+	background-color: rgb(250, 244, 244);
+	box-shadow: 0 0 5px rgb(167, 100, 206), 0 0 12px rgb(96, 45, 216), 0 0 20px rgb(204, 113, 207);
+}
+
+.nav-logo-text {
+	color: white;
+	font-weight: bold;
+	letter-spacing: 10px;
+	padding-left: 1em;
+	padding-right: 2.5em;
+	text-shadow: 0 0 5px rgb(103, 186, 197), 0 0 12px rgb(129, 147, 150), 0 0 20px rgb(59, 210, 230);
+}
+
+.audioController {
+	cursor: pointer;
+	padding: 2.5em;
+}
+
+.audioController:hover {
+	filter: brightness(0.75);
+}
+
+.nav-right a {
+	color: white;
+	letter-spacing: 3px;
+	padding: 2.5em;
+	text-decoration: none;
+}
+
+.nav-right a:hover {
+	text-shadow: 0 0 5px rgb(59, 210, 230), 0 0 12px rgb(59, 210, 230), 0 0 20px rgb(59, 210, 230);
+}
+
+/* ------------------------------------------------------------------- */
+
+#section1 {
+	display: flex;
+	justify-content: center;
+	margin: 6em 0 24em;
+}
+
+.s1-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5em;
+	width: 75%;
+	padding: 2em;
+	border-radius: 25px;
+	color: white;
+	background-color: rgb(25, 25, 26);
+	opacity: 0.85;
+}
+
+.s1-left,
+.s1-right {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.s1-left {
+	text-align: center;
+	align-self: flex-start;
+	padding: 1.5em 2.5em;
+}
+
+.s1-left h1 {
+	letter-spacing: 3px;
+	margin-bottom: 0;
+}
+
+.s1-left p {
+	font-size: 1.25em;
+	letter-spacing: 1px;
+	margin-bottom: 2em;
+}
+
+.s1-left button {
+	font-size: 1.2em;
+	padding: 0.75em;
+	background-color: rgb(96, 45, 216);
+	border: 1px solid rgb(96, 45, 216);
+	border-radius: 25px;
+	box-shadow: 0 0 5px rgb(167, 100, 206), 0 0 12px rgb(96, 45, 216), 0 0 20px rgb(204, 113, 207);
+}
+
+.s1-left button:hover {
+	cursor: pointer;
+	filter: brightness(1.4);
+	border: 2px solid rgb(96, 45, 216);
+}
+
+.s1-left button a {
+	color: white;
+	letter-spacing: 3px;
+	text-decoration: none;
+}
+
+.s1-right img {
+	width: 40vw;
+	margin-bottom: 1em;
+	border-radius: 1em;
+	filter: brightness(1.3);
+}
+
+/* ------------------------------------------------------------------- */
+
+#section2 {
+	text-align: center;
+	min-height: 28em;
+	border-radius: 0.75em;
+	box-shadow: 0 0 2em black;
+	background-color: rgb(204, 197, 197);
+}
+
+.s2-title {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 2em;
+	padding: 0.5em;
+	letter-spacing: 5px;
+	text-shadow: 0 0 3px maroon;
+}
+
+.s2-title img {
+	width: 1em;
+}
+
+.s2-content {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.s2-content div {
+	width: 18em;
+	height: 20em;
+	border-radius: 2em;
+	box-shadow: 2px 3px 6px maroon, 0 0 16px black;
+}
+
+/* why does div and img border-radius not match up??? */
+/* how to center img inside of div??? */
+
+.s2-content div img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 1.75em;
+	transition: 0.3s;
+}
+
+.s2-content div img:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+	box-shadow: 0 0 16px maroon, 0 0 18px black;
+}
+
+/* ------------------------------------------------------------------- */
+
+#section3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 100vh;
+	color: white;
+}
+
+.s3-quote,
+.s3-quote-author {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 2em;
+	letter-spacing: 3px;
+	filter: brightness(1.5);
+}
+
+.s3-quote {
+	padding: 0 6em;
+}
+
+/* ------------------------------------------------------------------- */
+
+#section4 {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2em;
+}
+
+.s4-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 3em;
+	padding: 2em;
+	border-radius: 25px;
+	color: white;
+	background-color: rgb(25, 25, 26);
+	opacity: 0.85;
+}
+
+.s4-left p {
+	font-size: 1.15em;
+	letter-spacing: 1px;
+}
+
+.s4-right button {
+	font-size: 1.2em;
+	padding: 0.75em;
+	background-color: rgb(96, 45, 216);
+	border: 1px solid rgb(96, 45, 216);
+	border-radius: 25px;
+	box-shadow: 0 0 5px rgb(167, 100, 206), 0 0 12px rgb(96, 45, 216), 0 0 20px rgb(204, 113, 207);
+	transition: 0.3s;
+}
+
+.s4-right button a {
+	color: white;
+	letter-spacing: 3px;
+	text-decoration: none;
+}
+
+.s4-right button:hover {
+	cursor: pointer;
+	background-color: whitesmoke;
+}
+
+.s4-right button:hover a {
+	color: rgb(96, 45, 216);
+}
+
+/* ------------------------------------------------------------------- */
+
+#footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 4em;
+	color: black;
+	background-color: rgb(204, 197, 197);
+	box-shadow: 0 0 2em black;
+}
+
+/* ------------------------------------------------------------------- */
+
+@media (max-width: 1275px) {
+	.nav-right a {
+		padding: 1em;
+	}
+	.s1-left {
+		padding: 1.5em 1.5em;
+	}
+	.s2-content {
+		flex-wrap: wrap;
+	}
+	.s2-content div {
+		margin: 2em;
+	}
+}
+
+@media (max-width: 1150px) {
+	.nav-right {
+		display: none;
+	}
+	.s1-left p {
+		font-size: 1.5em;
+	}
+	.s1-container,
+	.s1-right {
+		flex-direction: column;
+		text-align: center;
+	}
+	.s1-right img {
+		width: 70vw;
+	}
+}
+
+@media (max-width: 875px) {
+	.s3-quote {
+		padding: 4em;
+	}
+	.s4-container {
+		padding: 1.2em;
+	}
+	.s4-left h1 {
+		font-size: 0.8em;
+	}
+	.s4-left p {
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 750px) {
+	.s3-quote {
+		padding: 2em;
+	}
+}
+
+@media (max-width: 650px) {
+	.s3-quote,
+	.s3-quote-author {
+		font-size: 1.75em;
+		padding: 1em;
+	}
+	.s4-container {
+		width: 85%;
+	}
+}
+
+/* ------------------------------------------------------------------- */
