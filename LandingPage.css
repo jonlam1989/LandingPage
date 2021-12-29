@@ -282,7 +282,16 @@ body {
 
 /* ------------------------------------------------------------------- */
 
+@media (max-width: 1350px) {
+	.nav-right a {
+		padding: 1.5em;
+	}
+}
+
 @media (max-width: 1275px) {
+	.audioController {
+		padding-right: 0.5em;
+	}
 	.nav-right a {
 		padding: 1em;
 	}
@@ -297,7 +306,7 @@ body {
 	}
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1125px) {
 	.nav-right {
 		display: none;
 	}
